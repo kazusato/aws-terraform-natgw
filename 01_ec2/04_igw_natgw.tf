@@ -2,7 +2,7 @@ resource "aws_internet_gateway" "igw_main" {
   vpc_id = "${aws_vpc.vpc_main.id}"
   tags {
     env = "${var.env}"
-    Name = "igw-nagtw-work"
+    Name = "igw-natgw-work"
   }
 }
 
